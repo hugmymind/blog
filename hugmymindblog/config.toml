@@ -2,6 +2,7 @@ baseURL = 'https://hugmymind.github.io/'
 languageCode = 'en-us'
 title = 'Svicen'
 theme = 'contrast-hugo'
+avatarURL = "/images/avatar.webp"
 
 [menu]
   [[menu.main]]
