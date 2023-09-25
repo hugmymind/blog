@@ -1,0 +1,24 @@
+baseURL = 'https://hugmymind.github.io/'
+languageCode = 'en-us'
+title = 'Svicen'
+theme = 'contrast-hugo'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Posts"
+    pre = "<span data-feather='book'></span>"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Github"
+    pre = "<span data-feather='book'></span>"
+    url = "https://github.com/hugmymind/"
+    weight = 3
+	

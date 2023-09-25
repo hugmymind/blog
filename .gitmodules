@@ -1,0 +1,4 @@
+[submodule "hugmymindblog/public"]
+	path = hugmymindblog/public
+	url = https://github.com/hugmymind/hugmymind.github.io.git
+	branch = main
