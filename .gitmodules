@@ -2,3 +2,6 @@
 	path = hugmymindblog/public
 	url = https://github.com/hugmymind/hugmymind.github.io.git
 	branch = main
+[submodule "hugmymindblog/themes/PaperMod"]
+	path = hugmymindblog/themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
