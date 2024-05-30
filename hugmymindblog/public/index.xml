@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Svicen</title>
     <link>https://hugmymind.github.io/</link>
     <description>Recent content on Svicen</description>
-    <generator>Hugo -- 0.118.2</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Oct 2023 16:09:33 +0800</lastBuildDate>
-    <atom:link href="https://hugmymind.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Oct 2023 16:09:33 +0800</lastBuildDate><atom:link href="https://hugmymind.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VAE</title>
       <link>https://hugmymind.github.io/posts/vae/</link>
       <pubDate>Fri, 27 Oct 2023 16:09:33 +0800</pubDate>
+      
       <guid>https://hugmymind.github.io/posts/vae/</guid>
       <description>从PCA到VAE 在第一部分中，我们将从讨论与降维有关的一些概念开始。特别是，我们将简要回顾主成分分析（PCA）和自动编码器，以显示这两种思想之间的相互关系。
 什么是降维 在机器学习中，降维是减少描述某些数据的特征数量的过程。可以通过选择（仅保留一些现有特征）或通过提取（基于旧特征来减少数量的新特征）来进行此简化，并且在许多需要低维数据（数据可视化，数据存储，繁重的计算&amp;hellip;）。尽管存在许多不同的降维方法，但是我们可以设置一个与大多数（如果没有的话）方法相匹配的全局框架。
@@ -32,22 +32,27 @@ Autoencoders 自动编码器的总体思想非常简单，将编码器和解码�
 Variational Autoencoders 就像标准自动编码器一样，变分自动编码器是一种由编码器和解码器组成的架构，经过训练以最小化编码解码数据与初始数据之间的重构误差。然而，为了引入潜在空间的一些正则化，我们对编码解码过程进行了轻微的修改：我们不是将输入编码为单个点，而是将其编码为潜在空间上的分布。然后模型的训练如下：
 首先，输入被编码为潜在空间上的分布 the input is encoded as distribution over the latent space 第二，从该分布中采样潜在空间中的一个点 a point from the latent space is sampled from that distribution 第三，对采样点进行解码并计算重构误差 the sampled point is decoded and the reconstruction error can be computed 最后，重构误差通过网络反向传播 the reconstruction error is backpropagated through the network 在实践中，编码的分布被选择为正态分布（Gaussian mixture distribution），以便编码器可以被训练以返回描述这些高斯分布的均值和协方差矩阵。输入被编码为具有一定方差而不是单点的分布的原因是，它可以非常自然地表达潜在空间正则化：编码器返回的分布被强制接近标准正态分布。我们将在下一小节中看到，我们以这种方式确保潜在空间的局部和全局正则化（局部是因为方差控制，全局是因为均值控制）。</description>
     </item>
+    
     <item>
       <title>Deepfake</title>
       <link>https://hugmymind.github.io/posts/deepfake/</link>
       <pubDate>Mon, 25 Sep 2023 15:55:15 +0800</pubDate>
+      
       <guid>https://hugmymind.github.io/posts/deepfake/</guid>
       <description>This is a field I will put myself in for 3 years at lease.
 Come on !!!
 博客主要用来记录自己学习深度学习的经历和论文阅读总结，包括自己对于学科前沿和科技发展的一些看法和思考。
 正如url所言，Hug my mind，然后Hug the future。Thank you!</description>
     </item>
+    
     <item>
       <title>My first try of post</title>
       <link>https://hugmymind.github.io/posts/mypost/</link>
       <pubDate>Mon, 25 Sep 2023 14:48:38 +0800</pubDate>
+      
       <guid>https://hugmymind.github.io/posts/mypost/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>
